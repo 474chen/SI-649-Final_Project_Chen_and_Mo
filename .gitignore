@@ -1,0 +1,9 @@
+# the page fetches these, but they are generated: node scripts/sync-data.mjs
+# they ARE committed on purpose: GitHub Pages serves static files, so the
+# published site needs the JSON alongside the code.
+# (regenerate with: node scripts/sync-data.mjs)
+
+# tooling leftovers
+.DS_Store
+Thumbs.db
+.dsh-office.*/

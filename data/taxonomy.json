@@ -1,0 +1,706 @@
+{
+  "power": {
+    "band": 0.12563749793824197,
+    "alone": {
+      "store genres (11)": 0.033964495481078494,
+      "categories / play mode (4)": 0.022695524020865276,
+      "top-3 tags (18)": 0.10012572289583144,
+      "game tags only (23)": 0.09477664307413292
+    },
+    "joint": {
+      "store genres (11)": 0.18202501110821345,
+      "categories / play mode (4)": 0.17355190101298557,
+      "top-3 tags (18)": 0.19890968243038665,
+      "game tags only (23)": 0.21780173996162222
+    }
+  },
+  "dropped_tags": {
+    "team / business model": [
+      "indie",
+      "early_access",
+      "free_to_play",
+      "kickstarter",
+      "crowdfunded",
+      "mod",
+      "moddable",
+      "rpgmaker",
+      "gamemaker"
+    ],
+    "how people play it": [
+      "singleplayer",
+      "multiplayer",
+      "co_op",
+      "pvp",
+      "local_co_op",
+      "local_multiplayer",
+      "mmorpg",
+      "split_screen",
+      "asynchronous_multiplayer"
+    ],
+    "platform": [
+      "vr",
+      "vr_only",
+      "controller",
+      "touch_friendly",
+      "kinect"
+    ],
+    "reception / praise": [
+      "masterpiece",
+      "addictive",
+      "beautiful",
+      "funny",
+      "great_soundtrack",
+      "atmospheric",
+      "epic",
+      "cute",
+      "emotional",
+      "replay_value"
+    ],
+    "age rating / content": [
+      "nudity",
+      "sexual_content",
+      "nsfw",
+      "violent",
+      "gore",
+      "mature",
+      "blood"
+    ],
+    "art style": [
+      "2d",
+      "3d",
+      "pixel_graphics",
+      "anime",
+      "hand_drawn",
+      "stylized",
+      "cartoon",
+      "cartoony",
+      "retro",
+      "minimalist"
+    ]
+  },
+  "mech_tags": [
+    {
+      "tag": "open_world",
+      "level": -8.59,
+      "short": -11.69,
+      "long": -4.94,
+      "hours": 320.0,
+      "n": 943,
+      "x": 8.32
+    },
+    {
+      "tag": "survival",
+      "level": -7.8,
+      "short": -11.69,
+      "long": -5.44,
+      "hours": 263.0,
+      "n": 565,
+      "x": 8.04
+    },
+    {
+      "tag": "fps",
+      "level": -5.99,
+      "short": -8.23,
+      "long": -2.3,
+      "hours": 219.5,
+      "n": 634,
+      "x": 7.78
+    },
+    {
+      "tag": "sandbox",
+      "level": -6.24,
+      "short": -8.11,
+      "long": -3.49,
+      "hours": 407.5,
+      "n": 556,
+      "x": 8.67
+    },
+    {
+      "tag": "sports",
+      "level": -4.06,
+      "short": NaN,
+      "long": -4.63,
+      "hours": 211.0,
+      "n": 219,
+      "x": 7.72
+    },
+    {
+      "tag": "fantasy",
+      "level": -1.4,
+      "short": -3.24,
+      "long": -1.39,
+      "hours": 306.5,
+      "n": 674,
+      "x": 8.26
+    },
+    {
+      "tag": "racing",
+      "level": -1.81,
+      "short": NaN,
+      "long": -0.89,
+      "hours": 221.0,
+      "n": 229,
+      "x": 7.79
+    },
+    {
+      "tag": "stealth",
+      "level": -1.74,
+      "short": NaN,
+      "long": -3.85,
+      "hours": 276.0,
+      "n": 225,
+      "x": 8.11
+    },
+    {
+      "tag": "rts",
+      "level": -0.95,
+      "short": NaN,
+      "long": -0.9,
+      "hours": 302.5,
+      "n": 232,
+      "x": 8.24
+    },
+    {
+      "tag": "horror",
+      "level": -0.3,
+      "short": -0.2,
+      "long": 0.55,
+      "hours": 219.0,
+      "n": 706,
+      "x": 7.77
+    },
+    {
+      "tag": "space",
+      "level": 0.33,
+      "short": NaN,
+      "long": -0.06,
+      "hours": 266.0,
+      "n": 307,
+      "x": 8.06
+    },
+    {
+      "tag": "turn_based",
+      "level": 1.07,
+      "short": NaN,
+      "long": 0.97,
+      "hours": 331.0,
+      "n": 359,
+      "x": 8.37
+    },
+    {
+      "tag": "rogue_like",
+      "level": 2.14,
+      "short": NaN,
+      "long": 4.86,
+      "hours": 273.5,
+      "n": 250,
+      "x": 8.1
+    },
+    {
+      "tag": "point_&_click",
+      "level": 6.01,
+      "short": 2.82,
+      "long": 8.91,
+      "hours": 209.0,
+      "n": 317,
+      "x": 7.71
+    },
+    {
+      "tag": "sci_fi",
+      "level": 2.27,
+      "short": 5.55,
+      "long": 1.0,
+      "hours": 241.0,
+      "n": 718,
+      "x": 7.91
+    },
+    {
+      "tag": "platformer",
+      "level": 4.52,
+      "short": 6.29,
+      "long": 5.03,
+      "hours": 218.0,
+      "n": 581,
+      "x": 7.77
+    },
+    {
+      "tag": "puzzle",
+      "level": 6.13,
+      "short": 7.43,
+      "long": 6.51,
+      "hours": 213.0,
+      "n": 881,
+      "x": 7.73
+    },
+    {
+      "tag": "visual_novel",
+      "level": 7.93,
+      "short": NaN,
+      "long": 10.27,
+      "hours": 268.5,
+      "n": 320,
+      "x": 8.07
+    }
+  ],
+  "v2_ranked": [
+    {
+      "tag": "open world",
+      "n": 943,
+      "adj": -7.28,
+      "adj_lo": -8.4,
+      "adj_hi": -5.91,
+      "raw": 77.02,
+      "raw_lo": 76.01,
+      "raw_hi": 78.09
+    },
+    {
+      "tag": "survival",
+      "n": 565,
+      "adj": -7.24,
+      "adj_lo": -8.7,
+      "adj_hi": -5.24,
+      "raw": 76.27,
+      "raw_lo": 74.39,
+      "raw_hi": 78.38
+    },
+    {
+      "tag": "fps",
+      "n": 634,
+      "adj": -6.26,
+      "adj_lo": -7.78,
+      "adj_hi": -4.83,
+      "raw": 76.55,
+      "raw_lo": 74.95,
+      "raw_hi": 78.58
+    },
+    {
+      "tag": "sandbox",
+      "n": 556,
+      "adj": -4.19,
+      "adj_lo": -5.33,
+      "adj_hi": -2.18,
+      "raw": 78.91,
+      "raw_lo": 77.05,
+      "raw_hi": 80.37
+    },
+    {
+      "tag": "sports",
+      "n": 219,
+      "adj": -3.93,
+      "adj_lo": -7.17,
+      "adj_hi": -1.24,
+      "raw": 76.34,
+      "raw_lo": 74.14,
+      "raw_hi": 78.49
+    },
+    {
+      "tag": "management",
+      "n": 198,
+      "adj": -3.84,
+      "adj_lo": -5.96,
+      "adj_hi": -0.77,
+      "raw": 77.5,
+      "raw_lo": 75.7,
+      "raw_hi": 79.65
+    },
+    {
+      "tag": "stealth",
+      "n": 225,
+      "adj": -1.84,
+      "adj_lo": -3.49,
+      "adj_hi": 0.04,
+      "raw": 81.74,
+      "raw_lo": 79.79,
+      "raw_hi": 83.73
+    },
+    {
+      "tag": "rts",
+      "n": 232,
+      "adj": -1.73,
+      "adj_lo": -4.25,
+      "adj_hi": 0.47,
+      "raw": 80.21,
+      "raw_lo": 76.88,
+      "raw_hi": 83.04
+    },
+    {
+      "tag": "racing",
+      "n": 229,
+      "adj": -1.47,
+      "adj_lo": -3.64,
+      "adj_hi": -0.36,
+      "raw": 79.81,
+      "raw_lo": 77.47,
+      "raw_hi": 81.66
+    },
+    {
+      "tag": "fantasy",
+      "n": 674,
+      "adj": -0.43,
+      "adj_lo": -1.44,
+      "adj_hi": 1.07,
+      "raw": 81.59,
+      "raw_lo": 79.94,
+      "raw_hi": 82.95
+    },
+    {
+      "tag": "horror",
+      "n": 706,
+      "adj": -0.37,
+      "adj_lo": -1.88,
+      "adj_hi": 0.89,
+      "raw": 80.17,
+      "raw_lo": 78.75,
+      "raw_hi": 81.79
+    },
+    {
+      "tag": "space",
+      "n": 307,
+      "adj": 0.62,
+      "adj_lo": -1.69,
+      "adj_hi": 2.01,
+      "raw": 79.99,
+      "raw_lo": 77.88,
+      "raw_hi": 82.07
+    },
+    {
+      "tag": "turn based",
+      "n": 359,
+      "adj": 0.74,
+      "adj_lo": -1.11,
+      "adj_hi": 1.55,
+      "raw": 80.15,
+      "raw_lo": 78.76,
+      "raw_hi": 81.82
+    },
+    {
+      "tag": "sci fi",
+      "n": 718,
+      "adj": 1.47,
+      "adj_lo": 0.52,
+      "adj_hi": 2.76,
+      "raw": 82.73,
+      "raw_lo": 81.19,
+      "raw_hi": 83.94
+    },
+    {
+      "tag": "rogue like",
+      "n": 250,
+      "adj": 2.96,
+      "adj_lo": 1.17,
+      "adj_hi": 4.19,
+      "raw": 82.14,
+      "raw_lo": 80.22,
+      "raw_hi": 84.77
+    },
+    {
+      "tag": "platformer",
+      "n": 581,
+      "adj": 3.7,
+      "adj_lo": 2.68,
+      "adj_hi": 4.86,
+      "raw": 83.73,
+      "raw_lo": 82.23,
+      "raw_hi": 84.96
+    },
+    {
+      "tag": "puzzle",
+      "n": 881,
+      "adj": 5.46,
+      "adj_lo": 4.35,
+      "adj_hi": 6.71,
+      "raw": 85.16,
+      "raw_lo": 84.14,
+      "raw_hi": 86.49
+    },
+    {
+      "tag": "point & click",
+      "n": 317,
+      "adj": 5.81,
+      "adj_lo": 4.48,
+      "adj_hi": 7.06,
+      "raw": 86.54,
+      "raw_lo": 84.68,
+      "raw_hi": 87.8
+    },
+    {
+      "tag": "visual novel",
+      "n": 320,
+      "adj": 7.88,
+      "adj_lo": 6.68,
+      "adj_hi": 9.64,
+      "raw": 88.13,
+      "raw_lo": 86.81,
+      "raw_hi": 89.31
+    }
+  ],
+  "v2_length": [
+    {
+      "tag": "open world",
+      "short": -11.72,
+      "short_lo": -21.81,
+      "short_hi": -3.04,
+      "n_short": 47,
+      "long": -4.94,
+      "long_lo": -7.34,
+      "long_hi": -3.16,
+      "n_long": 362,
+      "gap": 6.78
+    },
+    {
+      "tag": "survival",
+      "short": -11.02,
+      "short_lo": -22.89,
+      "short_hi": -3.04,
+      "n_short": 30,
+      "long": -5.44,
+      "long_lo": -9.16,
+      "long_hi": -2.09,
+      "n_long": 171,
+      "gap": 5.58
+    },
+    {
+      "tag": "fps",
+      "short": -8.23,
+      "short_lo": -19.02,
+      "short_hi": -4.34,
+      "n_short": 39,
+      "long": -2.3,
+      "long_lo": -7.47,
+      "long_hi": -0.15,
+      "n_long": 136,
+      "gap": 5.93
+    },
+    {
+      "tag": "sandbox",
+      "short": -5.63,
+      "short_lo": -16.77,
+      "short_hi": 0.6,
+      "n_short": 27,
+      "long": -3.49,
+      "long_lo": -6.22,
+      "long_hi": -1.71,
+      "n_long": 248,
+      "gap": 2.14
+    },
+    {
+      "tag": "horror",
+      "short": -0.2,
+      "short_lo": -6.86,
+      "short_hi": 4.57,
+      "n_short": 48,
+      "long": 0.55,
+      "long_lo": -1.61,
+      "long_hi": 4.91,
+      "n_long": 97,
+      "gap": 0.75
+    },
+    {
+      "tag": "fantasy",
+      "short": -0.12,
+      "short_lo": -11.73,
+      "short_hi": 10.16,
+      "n_short": 28,
+      "long": -1.39,
+      "long_lo": -4.0,
+      "long_hi": 0.67,
+      "n_long": 232,
+      "gap": -1.27
+    },
+    {
+      "tag": "space",
+      "short": 0.66,
+      "short_lo": -9.65,
+      "short_hi": 8.71,
+      "n_short": 25,
+      "long": -0.06,
+      "long_lo": -4.85,
+      "long_hi": 2.82,
+      "n_long": 78,
+      "gap": -0.72
+    },
+    {
+      "tag": "point & click",
+      "short": 1.98,
+      "short_lo": -3.18,
+      "short_hi": 9.08,
+      "n_short": 29,
+      "long": 8.91,
+      "long_lo": 6.47,
+      "long_hi": 10.24,
+      "n_long": 36,
+      "gap": 6.93
+    },
+    {
+      "tag": "platformer",
+      "short": 6.19,
+      "short_lo": -2.05,
+      "short_hi": 11.86,
+      "n_short": 41,
+      "long": 5.03,
+      "long_lo": 2.4,
+      "long_hi": 7.01,
+      "n_long": 70,
+      "gap": -1.17
+    },
+    {
+      "tag": "sci fi",
+      "short": 6.86,
+      "short_lo": 0.66,
+      "short_hi": 9.08,
+      "n_short": 35,
+      "long": 1.0,
+      "long_lo": -1.85,
+      "long_hi": 3.36,
+      "n_long": 161,
+      "gap": -5.86
+    },
+    {
+      "tag": "puzzle",
+      "short": 7.05,
+      "short_lo": 1.26,
+      "short_hi": 11.14,
+      "n_short": 59,
+      "long": 6.51,
+      "long_lo": 4.54,
+      "long_hi": 8.25,
+      "n_long": 100,
+      "gap": -0.53
+    }
+  ],
+  "length_by_kind": [
+    {
+      "group": "long-form kinds (open world, survival, FPS, sandbox)",
+      "bin": "5-20h",
+      "n": 91,
+      "median": -6.48,
+      "lo": -11.69,
+      "hi": -1.17
+    },
+    {
+      "group": "long-form kinds (open world, survival, FPS, sandbox)",
+      "bin": "20-100h",
+      "n": 280,
+      "median": -4.88,
+      "lo": -7.55,
+      "hi": -2.65
+    },
+    {
+      "group": "long-form kinds (open world, survival, FPS, sandbox)",
+      "bin": "100-500h",
+      "n": 747,
+      "median": -4.49,
+      "lo": -5.91,
+      "hi": -2.93
+    },
+    {
+      "group": "long-form kinds (open world, survival, FPS, sandbox)",
+      "bin": ">500h",
+      "n": 509,
+      "median": -3.1,
+      "lo": -4.5,
+      "hi": -1.41
+    },
+    {
+      "group": "short-form kinds (puzzle, visual novel, point & click, platformer)",
+      "bin": "5-20h",
+      "n": 121,
+      "median": 4.86,
+      "lo": 1.35,
+      "hi": 8.81
+    },
+    {
+      "group": "short-form kinds (puzzle, visual novel, point & click, platformer)",
+      "bin": "20-100h",
+      "n": 271,
+      "median": 5.35,
+      "lo": 4.35,
+      "hi": 7.21
+    },
+    {
+      "group": "short-form kinds (puzzle, visual novel, point & click, platformer)",
+      "bin": "100-500h",
+      "n": 1030,
+      "median": 4.29,
+      "lo": 3.44,
+      "hi": 5.52
+    },
+    {
+      "group": "short-form kinds (puzzle, visual novel, point & click, platformer)",
+      "bin": ">500h",
+      "n": 231,
+      "median": 6.99,
+      "lo": 5.85,
+      "hi": 8.22
+    },
+    {
+      "group": "all games",
+      "bin": "5-20h",
+      "n": 414,
+      "median": 0.61,
+      "lo": -1.07,
+      "hi": 2.37
+    },
+    {
+      "group": "all games",
+      "bin": "20-100h",
+      "n": 898,
+      "median": 0.99,
+      "lo": -0.24,
+      "hi": 2.01
+    },
+    {
+      "group": "all games",
+      "bin": "100-500h",
+      "n": 3016,
+      "median": -0.63,
+      "lo": -1.31,
+      "hi": 0.2
+    },
+    {
+      "group": "all games",
+      "bin": ">500h",
+      "n": 1043,
+      "median": 0.29,
+      "lo": -0.6,
+      "hi": 1.02
+    }
+  ],
+  "play_modes": [
+    {
+      "index": "MMO",
+      "n": 221,
+      "rating": 66.45,
+      "adj": -16.24,
+      "hours": 145.0
+    },
+    {
+      "index": "Single-player only",
+      "n": 251,
+      "rating": 72.37,
+      "adj": -8.38,
+      "hours": 107.0
+    },
+    {
+      "index": "Multiplayer only",
+      "n": 1384,
+      "rating": 79.05,
+      "adj": -1.95,
+      "hours": 256.0
+    },
+    {
+      "index": "Single + multiplayer",
+      "n": 3715,
+      "rating": 80.3,
+      "adj": 2.12,
+      "hours": 227.0
+    },
+    {
+      "index": "unlisted",
+      "n": 34,
+      "rating": 82.79,
+      "adj": 6.55,
+      "hours": 195.0
+    }
+  ]
+}

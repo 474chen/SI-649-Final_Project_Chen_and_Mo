@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Working title: swap it once the group settles on one. -->
+    <title>Every Score Is a Crowd — a visual essay on Steam reviews</title>
+    <meta name="description"
+          content="What 27,075 Steam games say about review scores, and why the crowd behind a score matters more than the game.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================================================================
+         INTRO
+         ================================================================ -->
+    <header id="intro">
+        <p class="kicker">A visual essay</p>
+        <h1>Every Score Is a Crowd</h1>
+        <p class="standfirst">
+            27,075 games. One number each. We went looking for good games and kept finding
+            the people who rated them.
+        </p>
+        <p class="byline">SI649 · Fall 2026 · Team __</p>
+        <p class="scroll-hint" aria-hidden="true">Scroll ↓</p>
+    </header>
+
+    <main>
+
+        <!-- ================================================================
+             ACT 1 — the fog, the slice, the funnel
+             Sticky chart on the left, four narrative steps on the right.
+             State is driven by scrolling (js/scrolly.js) and by the pointer
+             (the lens inside js/chart1-funnel.js).
+             ================================================================ -->
+        <section id="act1" class="scrolly" data-act="1">
+            <div class="graphic">
+                <div id="chart1" class="chart">
+                    <!-- js/chart1-funnel.js appends the SVG here -->
+                </div>
+                <p class="graphic-note" id="chart1-note"></p>
+            </div>
+
+            <div class="steps">
+                <p class="act-label">Act 1 — The fog</p>
+
+                <div class="step" data-step="0">
+                    <h2>5,605 games, one dot each</h2>
+                    <p>Right is more reviews, up is a better score. Most of the picture is
+                        noise.</p>
+                </div>
+
+                <div class="step" data-step="1">
+                    <h2>Cut one slice</h2>
+                    <p>1,213 of them have between 50 and 200 reviews. Inside that slice the
+                        scores go everywhere.</p>
+                </div>
+
+                <div class="step" data-step="2">
+                    <h2>Drag the lens</h2>
+                    <p>Move it right. Watch the bottom of the slice, not the middle.</p>
+                </div>
+
+                <div class="step" data-step="3">
+                    <h2>The funnel is what your hand left behind</h2>
+                    <p>The median barely moves. The floor rises 27 points.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             ACT 2 — kinds are judged by their own ruler
+             ================================================================ -->
+        <section id="act2" data-act="2">
+            <div class="section-head">
+                <p class="act-label">Act 2 — The rulers</p>
+                <h2>Every kind of game is judged against its own crowd</h2>
+                <p class="question">
+                    Nineteen kinds of games, each scored net of the crowd that rates it.
+                    <strong>Hover a label</strong> to read its interval; click it to open the
+                    explorer below.
+                </p>
+            </div>
+
+            <div class="controls" role="group" aria-label="Act 2 view">
+                <button class="mode-btn is-on" data-mode="adjusted" type="button">
+                    Net of crowd size
+                </button>
+                <button class="mode-btn" data-mode="raw" type="button">
+                    Raw score
+                </button>
+                <span class="hint" id="chart2-hint"></span>
+            </div>
+
+            <div id="chart2" class="chart">
+                <!-- js/chart2-rulers.js appends the SVG here -->
+            </div>
+        </section>
+
+        <!-- ================================================================
+             ACT 3 — three ways to cut the same chart
+             ================================================================ -->
+        <section id="act3" data-act="3">
+            <div class="section-head">
+                <p class="act-label">Act 3 — The cut</p>
+                <h2>The same chart, cut three ways</h2>
+                <p class="question">
+                    One line, three cuts. The slope that looks obvious disappears as soon as
+                    the chart is allowed to see who is being compared.
+                </p>
+            </div>
+
+            <div class="controls" role="group" aria-label="Grouping">
+                <button class="group-btn is-on" data-grouping="none" type="button">No grouping</button>
+                <button class="group-btn" data-grouping="band" type="button">By audience size</button>
+                <button class="group-btn" data-grouping="kind" type="button">By kind of game</button>
+            </div>
+
+            <div id="chart3" class="chart">
+                <!-- js/chart3-cuts.js appends the SVG here -->
+            </div>
+            <p class="graphic-note" id="chart3-note"></p>
+        </section>
+
+        <!-- ================================================================
+             ACT 4 — the explorer
+             ================================================================ -->
+        <section id="act4" data-act="4">
+            <div class="section-head">
+                <p class="act-label">Act 4 — Your turn</p>
+                <h2>Pick a kind of game and a crowd, and see who is left</h2>
+                <p class="question">
+                    Every cell shows the middle 80% of scores for that kind of game at that
+                    audience size. Cells with fewer than 15 games are shown as empty.
+                </p>
+            </div>
+
+            <div class="controls">
+                <label for="kind-select">Kind of game</label>
+                <select id="kind-select"></select>
+
+                <label for="band-select">Audience size</label>
+                <select id="band-select"></select>
+
+                <span class="hint" id="chart4-hint"></span>
+            </div>
+
+            <div class="explorer">
+                <div id="chart4" class="chart">
+                    <!-- js/chart4-explorer.js appends the SVG here -->
+                </div>
+                <div class="cards" id="game-cards">
+                    <!-- three real games from the selected cell -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             METHOD — visible, not in a footnote
+             ================================================================ -->
+        <section id="method" data-act="0">
+            <p class="act-label">How we know</p>
+            <h2>What this data can and cannot say</h2>
+            <ul class="method-list">
+                <li><strong>Unit.</strong> One row per game, never per player. The U-shape that
+                    studies report at the player level cannot be observed here.</li>
+                <li><strong>Sample.</strong> 5,605 of 27,075 games: at least 50 reviews and a
+                    non-zero playtime estimate. Everything below describes the visible part of
+                    Steam, not its long tail.</li>
+                <li><strong>Playtime.</strong> SteamSpy estimates, which degraded after the 2018
+                    privacy change, and which are an outcome as much as a predictor.</li>
+                <li><strong>Score.</strong> Positive reviews over all reviews, a lifetime ratio.
+                    No language filter, no review-bomb filter, no time dimension.</li>
+                <li><strong>Net of crowd size</strong> means: minus the median score of the same
+                    audience band. It is a comparison between comparable games, not a causal
+                    model.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data: <a href="https://www.kaggle.com/datasets/nikdavis/steam-store-games">Steam Store
+            Games</a> (Kaggle, nikdavis), a SteamSpy snapshot from September 2019. SteamSpy is an
+            unofficial project and is not associated with Valve.</p>
+        <p>Built with D3 v7. Every number on this page is precomputed; nothing is aggregated in
+            the browser.</p>
+    </footer>
+
+    <!-- D3 stays a global so the chart modules can use it directly -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="js/data.js"></script>
+    <script type="module" src="js/scrolly.js"></script>
+    <script type="module" src="js/chart1-funnel.js"></script>
+    <script type="module" src="js/chart2-rulers.js"></script>
+    <script type="module" src="js/chart3-cuts.js"></script>
+    <script type="module" src="js/chart4-explorer.js"></script>
+</body>
+
+</html>
