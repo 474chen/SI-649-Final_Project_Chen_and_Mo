@@ -125,8 +125,12 @@ section {
 }
 
 /* --- Act 1: sticky chart + steps ---------------------------------------- */
+/* No steps on the page at the moment, so the chart is a single centred block.
+   When the four beats come back, put the .scrolly class back on #act1: the
+   grid and the sticky behaviour are both scoped to `#act1.scrolly`, so nothing
+   else has to change. */
 
-#act1 {
+#act1.scrolly {
     display: grid;
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap: 48px;
@@ -171,6 +175,13 @@ section {
     color: var(--muted);
     min-height: 1.4em;
     margin-top: 8px;
+}
+
+#act1:not(.scrolly) .graphic {
+    position: static;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* --- charts -------------------------------------------------------------- */
@@ -350,18 +361,6 @@ select {
     font-variant-numeric: tabular-nums;
 }
 
-/* --- method -------------------------------------------------------------- */
-
-.method-list {
-    max-width: 44rem;
-    padding-left: 1.1rem;
-    color: #333;
-}
-
-.method-list li {
-    margin-bottom: 10px;
-}
-
 /* --- footer -------------------------------------------------------------- */
 
 footer {
@@ -382,7 +381,7 @@ footer a {
         font-size: 16px;
     }
 
-    #act1 {
+    #act1.scrolly {
         display: block;
     }
 

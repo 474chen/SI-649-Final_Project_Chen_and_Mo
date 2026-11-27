@@ -31,42 +31,18 @@
 
         <!-- ================================================================
              ACT 1 — the fog, the slice, the funnel
-             Sticky chart on the left, four narrative steps on the right.
-             State is driven by scrolling (js/scrolly.js) and by the pointer
-             (the lens inside js/chart1-funnel.js).
+             A single chart. Its narrative beats are still to be written; when
+             they are, wrap #chart1 in the .scrolly grid again and script the
+             steps (the classes are still in css/style.css).
              ================================================================ -->
-        <section id="act1" class="scrolly" data-act="1">
+        <section id="act1" data-act="1">
+            <p class="act-label">Act 1 — The fog</p>
+
             <div class="graphic">
                 <div id="chart1" class="chart">
                     <!-- js/chart1-funnel.js appends the SVG here -->
                 </div>
                 <p class="graphic-note" id="chart1-note"></p>
-            </div>
-
-            <div class="steps">
-                <p class="act-label">Act 1 — The fog</p>
-
-                <div class="step" data-step="0">
-                    <h2>5,605 games, one dot each</h2>
-                    <p>Right is more reviews, up is a better score. Most of the picture is
-                        noise.</p>
-                </div>
-
-                <div class="step" data-step="1">
-                    <h2>Cut one slice</h2>
-                    <p>1,213 of them have between 50 and 200 reviews. Inside that slice the
-                        scores go everywhere.</p>
-                </div>
-
-                <div class="step" data-step="2">
-                    <h2>Drag the lens</h2>
-                    <p>Move it right. Watch the bottom of the slice, not the middle.</p>
-                </div>
-
-                <div class="step" data-step="3">
-                    <h2>The funnel is what your hand left behind</h2>
-                    <p>The median barely moves. The floor rises 27 points.</p>
-                </div>
             </div>
         </section>
 
@@ -157,27 +133,6 @@
             </div>
         </section>
 
-        <!-- ================================================================
-             METHOD — visible, not in a footnote
-             ================================================================ -->
-        <section id="method" data-act="0">
-            <p class="act-label">How we know</p>
-            <h2>What this data can and cannot say</h2>
-            <ul class="method-list">
-                <li><strong>Unit.</strong> One row per game, never per player. The U-shape that
-                    studies report at the player level cannot be observed here.</li>
-                <li><strong>Sample.</strong> 5,605 of 27,075 games: at least 50 reviews and a
-                    non-zero playtime estimate. Everything below describes the visible part of
-                    Steam, not its long tail.</li>
-                <li><strong>Playtime.</strong> SteamSpy estimates, which degraded after the 2018
-                    privacy change, and which are an outcome as much as a predictor.</li>
-                <li><strong>Score.</strong> Positive reviews over all reviews, a lifetime ratio.
-                    No language filter, no review-bomb filter, no time dimension.</li>
-                <li><strong>Net of crowd size</strong> means: minus the median score of the same
-                    audience band. It is a comparison between comparable games, not a causal
-                    model.</li>
-            </ul>
-        </section>
     </main>
 
     <footer>

@@ -13,7 +13,7 @@ event bus are all in place, so a chart can be built without touching anything el
 ## Files
 
 ```
-index.html            the article: intro, four acts, method note
+index.html            the article: intro + four acts
 css/style.css         typography, the sticky graphic, controls, cards
 js/data.js            loads the JSON, holds shared state, the announce/listen bus
 js/scrolly.js         scroll position -> step index (Act 1)

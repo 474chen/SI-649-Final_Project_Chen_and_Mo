@@ -1,0 +1,5 @@
+# keep the sources LF even though the tools on Windows like CRLF: a diff that
+# rewrites every line for a one-line edit makes the history useless.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
