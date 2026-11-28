@@ -19,7 +19,7 @@ const source = resolve(root, '..', 'data');
 const target = join(root, 'data');
 
 const FILES = ['curves.json', 'density.json', 'fog.json', 'meta.json',
-               'taxonomy.json', 'explorer.json', 'games.json'];
+               'taxonomy.json', 'explorer.json', 'act3.json', 'games.json'];
 
 const checkOnly = process.argv.includes('--check');
 

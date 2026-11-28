@@ -402,29 +402,113 @@ select {
     align-items: start;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-}
-
-.card {
+.cell-card {
     border: 1px solid var(--grid);
-    border-radius: 8px;
-    padding: 12px 14px;
-    background: var(--paper);
+    border-radius: 10px;
+    padding: 16px 18px 18px;
+    background: #fcfcfc;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    position: sticky;
+    top: 24px;
 }
 
-.card h3 {
-    font-size: 0.95rem;
-    margin-bottom: 4px;
+.cell-card .card-eyebrow {
+    margin: 0 0 2px;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
 }
 
-.card .meta {
-    font-size: 0.8rem;
+.cell-card .card-figure {
+    margin: 0 0 14px;
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+}
+
+.cell-card .card-stats {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 12px;
+    margin: 0 0 16px;
+    font-size: 0.84rem;
+}
+
+.cell-card .card-stats dt {
+    color: var(--muted);
+}
+
+.cell-card .card-stats dd {
+    margin: 0;
+    text-align: right;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+}
+
+.cell-card .card-stats dd.up {
+    color: #1f6f9e;
+}
+
+.cell-card .card-stats dd.down {
+    color: var(--accent);
+}
+
+.cell-card .card-label {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.cell-card .card-games {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--grid);
+}
+
+.cell-card .card-games li {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    align-items: baseline;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--grid);
+    font-size: 0.84rem;
+}
+
+.cell-card .g-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--ink);
+}
+
+.cell-card .g-score {
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+}
+
+.cell-card .g-rev {
+    font-size: 0.76rem;
     color: var(--muted);
     font-variant-numeric: tabular-nums;
+}
+
+.cell-card .card-empty {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .cell-card {
+        position: static;
+    }
 }
 
 /* --- footer -------------------------------------------------------------- */
@@ -486,4 +570,59 @@ footer a {
     .step {
         transition: none;
     }
+}
+
+/* Act 3 — the readout under the cut chart */
+#chart3-note {
+    min-height: 1.6em;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+#chart3-note b {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+#chart3-note .chips {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-left: 0.4rem;
+    vertical-align: baseline;
+}
+
+#chart3-note .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+}
+
+#chart3-note .chip em {
+    font-style: normal;
+    font-size: 0.82em;
+    color: var(--muted);
+}
+
+#chart3-note .chip-key {
+    margin-left: 0.9rem;
+    font-size: 0.82em;
+    color: var(--muted);
+}
+
+#chart3-note .chip i {
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.graphic-hint {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.45;
+    max-width: 46ch;
 }

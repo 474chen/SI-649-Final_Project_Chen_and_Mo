@@ -52,16 +52,17 @@
 
 const BASE = 'data/';
 
-const [curves, density, fog, meta, taxonomy, explorer] = await Promise.all([
+const [curves, density, fog, meta, taxonomy, explorer, act3] = await Promise.all([
     d3.json(`${BASE}curves.json`),
     d3.json(`${BASE}density.json`),
     d3.json(`${BASE}fog.json`),
     d3.json(`${BASE}meta.json`),
     d3.json(`${BASE}taxonomy.json`),
-    d3.json(`${BASE}explorer.json`)
+    d3.json(`${BASE}explorer.json`),
+    d3.json(`${BASE}act3.json`)
 ]);
 
-export const data = { curves, density, fog, meta, taxonomy, explorer };
+export const data = { curves, density, fog, meta, taxonomy, explorer, act3 };
 
 // --- lazy per-game records (Act 4 cards) ------------------------------------
 
@@ -162,6 +163,8 @@ function wireControls() {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.group-btn').forEach(b => b.classList.remove('is-on'));
             btn.classList.add('is-on');
+            document.querySelectorAll('.group-btn').forEach(b =>
+                b.setAttribute('aria-pressed', String(b === btn)));
             state.grouping = btn.dataset.grouping;
             announce('grouping', state.grouping);
         });

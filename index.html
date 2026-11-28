@@ -103,21 +103,33 @@
                 <p class="act-label">Act 3 — The cut</p>
                 <h2>The same chart, cut three ways</h2>
                 <p class="question">
-                    One line, three cuts. The slope that looks obvious disappears as soon as
-                    the chart is allowed to see who is being compared.
+                    One line, three cuts. The score rises to a plateau somewhere between 8 and 32
+                    hours, then sags back — so the question is whether longer games are better, or
+                    whether the boxes change who is standing in them. Cutting by kind of game only
+                    splits the level, never the shape: its groups are crowds in disguise. Cutting
+                    by crowd shifts every point up or down by about five, and the arch is still
+                    there inside each line.
                 </p>
-            </div>
-
-            <div class="controls" role="group" aria-label="Grouping">
-                <button class="group-btn is-on" data-grouping="none" type="button">No grouping</button>
-                <button class="group-btn" data-grouping="band" type="button">By audience size</button>
-                <button class="group-btn" data-grouping="kind" type="button">By kind of game</button>
             </div>
 
             <div id="chart3" class="chart">
                 <!-- js/chart3-cuts.js appends the SVG here -->
             </div>
-            <p class="graphic-note" id="chart3-note"></p>
+
+            <div class="controls" role="group" aria-label="How to cut the chart">
+                <button class="group-btn is-on" data-grouping="none" type="button"
+                        aria-pressed="true">No split</button>
+                <button class="group-btn" data-grouping="kind" type="button"
+                        aria-pressed="false">By kind of game</button>
+                <button class="group-btn" data-grouping="band" type="button"
+                        aria-pressed="false">By crowd size</button>
+                <p class="graphic-hint" id="chart3-hint">
+                    Eight playtime bins. The grey bars are how many games sit in each one; the
+                    coloured strip is who those games are, and it moves with the cut.
+                </p>
+            </div>
+
+            <p class="graphic-note" id="chart3-note" aria-live="polite"></p>
         </section>
 
         <!-- ================================================================
@@ -126,31 +138,28 @@
         <section id="act4" data-act="4">
             <div class="section-head">
                 <p class="act-label">Act 4 — Your turn</p>
-                <h2>Pick a kind of game and a crowd, and see who is left</h2>
+                <h2>Every kind of game, at every size of crowd</h2>
                 <p class="question">
-                    Every cell shows the middle 80% of scores for that kind of game at that
-                    audience size. Cells with fewer than 15 games are shown as empty.
+                    A toolbox, not a verdict: nineteen kinds down, six crowds across. Each cell
+                    holds the middle 80% of that cell's scores — the thin line runs from the 10th
+                    to the 90th percentile, the thick bar is the middle half, the dot is the
+                    median. Every cell is shaded by its own median, so the darker half of the
+                    grid is the half that scores high.
                 </p>
-            </div>
-
-            <div class="controls">
-                <label for="kind-select">Kind of game</label>
-                <select id="kind-select"></select>
-
-                <label for="band-select">Audience size</label>
-                <select id="band-select"></select>
-
-                <span class="hint" id="chart4-hint"></span>
+                <p class="question">
+                    Click a cell — or move through them with the arrow keys — to see its numbers
+                    and three real games drawn from it.
+                </p>
             </div>
 
             <div class="explorer">
                 <div id="chart4" class="chart">
                     <!-- js/chart4-explorer.js appends the SVG here -->
                 </div>
-                <div class="cards" id="game-cards">
-                    <!-- three real games from the selected cell -->
-                </div>
+                <aside class="cell-card" id="game-cards" aria-live="polite"></aside>
             </div>
+
+            <p class="graphic-note" id="chart4-note"></p>
         </section>
 
     </main>
