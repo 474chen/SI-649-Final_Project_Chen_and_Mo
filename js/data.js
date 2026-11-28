@@ -32,6 +32,8 @@
 //                                   median_reviews, sampling_sd }
 //   data.curves.genres[50].Action { n, by_bin: [...] }
 //   data.curves.bin_edges / bin_centres / bin_labels
+//   data.fog                      { x0, x1, dots: [[reviews, rating], ...] }
+//                                   every game in the review-count plane (Act 1)
 //   data.density[50]              { x0, x1, grid: [cols, rows], max,
 //                                   cells: [{ h, r, c }], dots: [[x, y], ...] }
 //   data.taxonomy.v2_ranked       [19 tags, adjusted score + CI + raw + n]
@@ -50,15 +52,16 @@
 
 const BASE = 'data/';
 
-const [curves, density, meta, taxonomy, explorer] = await Promise.all([
+const [curves, density, fog, meta, taxonomy, explorer] = await Promise.all([
     d3.json(`${BASE}curves.json`),
     d3.json(`${BASE}density.json`),
+    d3.json(`${BASE}fog.json`),
     d3.json(`${BASE}meta.json`),
     d3.json(`${BASE}taxonomy.json`),
     d3.json(`${BASE}explorer.json`)
 ]);
 
-export const data = { curves, density, meta, taxonomy, explorer };
+export const data = { curves, density, fog, meta, taxonomy, explorer };
 
 // --- lazy per-game records (Act 4 cards) ------------------------------------
 

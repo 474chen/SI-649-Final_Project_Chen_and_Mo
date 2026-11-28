@@ -10,7 +10,7 @@
     "joint": {
       "store genres (11)": 0.18202501110821345,
       "categories / play mode (4)": 0.17355190101298557,
-      "top-3 tags (18)": 0.19890968243038665,
+      "top-3 tags (18)": 0.19890968243038676,
       "game tags only (23)": 0.21780173996162222
     }
   },
@@ -118,7 +118,7 @@
     {
       "tag": "sports",
       "level": -4.06,
-      "short": NaN,
+      "short": null,
       "long": -4.63,
       "hours": 211.0,
       "n": 219,
@@ -136,7 +136,7 @@
     {
       "tag": "racing",
       "level": -1.81,
-      "short": NaN,
+      "short": null,
       "long": -0.89,
       "hours": 221.0,
       "n": 229,
@@ -145,7 +145,7 @@
     {
       "tag": "stealth",
       "level": -1.74,
-      "short": NaN,
+      "short": null,
       "long": -3.85,
       "hours": 276.0,
       "n": 225,
@@ -154,7 +154,7 @@
     {
       "tag": "rts",
       "level": -0.95,
-      "short": NaN,
+      "short": null,
       "long": -0.9,
       "hours": 302.5,
       "n": 232,
@@ -172,7 +172,7 @@
     {
       "tag": "space",
       "level": 0.33,
-      "short": NaN,
+      "short": null,
       "long": -0.06,
       "hours": 266.0,
       "n": 307,
@@ -181,7 +181,7 @@
     {
       "tag": "turn_based",
       "level": 1.07,
-      "short": NaN,
+      "short": null,
       "long": 0.97,
       "hours": 331.0,
       "n": 359,
@@ -190,7 +190,7 @@
     {
       "tag": "rogue_like",
       "level": 2.14,
-      "short": NaN,
+      "short": null,
       "long": 4.86,
       "hours": 273.5,
       "n": 250,
@@ -235,7 +235,7 @@
     {
       "tag": "visual_novel",
       "level": 7.93,
-      "short": NaN,
+      "short": null,
       "long": 10.27,
       "hours": 268.5,
       "n": 320,

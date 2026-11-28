@@ -177,6 +177,33 @@ section {
     margin-top: 8px;
 }
 
+/* The chart is the keyboard control, so it needs a focus ring of its own. */
+#chart1:focus {
+    outline: none;
+}
+
+#chart1:focus-visible {
+    outline: 2px dashed rgba(44, 127, 184, 0.6);
+    outline-offset: 4px;
+}
+
+/* The band card: the readout under a chart, tied to the red bars by the rule. */
+#chart1-note {
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: #333;
+    font-variant-numeric: tabular-nums;
+    border-left: 3px solid var(--accent);
+    padding: 7px 0 7px 12px;
+    margin-top: 12px;
+    background: linear-gradient(to right, rgba(192, 57, 43, 0.05), rgba(192, 57, 43, 0) 62%);
+}
+
+#chart1-note b {
+    color: var(--ink);
+    font-weight: 620;
+}
+
 #act1:not(.scrolly) .graphic {
     position: static;
     height: auto;

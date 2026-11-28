@@ -2,7 +2,7 @@
 // SYNC-DATA.MJS — copy the JSON the page needs into main code/data/
 // ============================================================================
 // The Python pipeline writes to ../data. The page must only ever fetch what it
-// draws, so this script copies the five files it uses and nothing else (no raw
+// draws, so this script copies the six files it uses and nothing else (no raw
 // CSVs, no zip).
 //
 //   node scripts/sync-data.mjs          # copy
@@ -18,8 +18,8 @@ const root = resolve(here, '..');
 const source = resolve(root, '..', 'data');
 const target = join(root, 'data');
 
-const FILES = ['curves.json', 'density.json', 'meta.json', 'taxonomy.json',
-               'explorer.json', 'games.json'];
+const FILES = ['curves.json', 'density.json', 'fog.json', 'meta.json',
+               'taxonomy.json', 'explorer.json', 'games.json'];
 
 const checkOnly = process.argv.includes('--check');
 
