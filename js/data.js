@@ -148,6 +148,15 @@ function wireControls() {
         });
     });
 
+    // Act 2: which crowd the rows are read in
+    const bandSelect = document.querySelector('#act2-band');
+    if (bandSelect) {
+        bandSelect.addEventListener('change', () => {
+            state.band = bandSelect.value;
+            announce('band', bandSelect.value);
+        });
+    }
+
     // Act 3: the three-way cut
     document.querySelectorAll('.group-btn').forEach(btn => {
         btn.addEventListener('click', () => {

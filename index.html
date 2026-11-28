@@ -63,24 +63,35 @@
                 <p class="act-label">Act 2 — The rulers</p>
                 <h2>Every kind of game is judged against its own crowd</h2>
                 <p class="question">
-                    Nineteen kinds of games, each scored net of the crowd that rates it.
-                    <strong>Hover a label</strong> to read its interval; click it to open the
-                    explorer below.
+                    Nineteen kinds of games, one row each. <strong>Switch the ruler</strong> to see
+                    how far apart they really are, then <strong>pick a crowd size</strong> and watch
+                    the disagreement inside each kind shrink — the order never moves.
                 </p>
-            </div>
-
-            <div class="controls" role="group" aria-label="Act 2 view">
-                <button class="mode-btn is-on" data-mode="adjusted" type="button">
-                    Net of crowd size
-                </button>
-                <button class="mode-btn" data-mode="raw" type="button">
-                    Raw score
-                </button>
-                <span class="hint" id="chart2-hint"></span>
             </div>
 
             <div id="chart2" class="chart">
                 <!-- js/chart2-rulers.js appends the SVG here -->
+            </div>
+
+            <div class="controls" role="group" aria-label="Act 2 view">
+                <span class="control-label">Ruler</span>
+                <button class="mode-btn is-on" data-mode="adjusted" type="button">
+                    Net of crowd
+                </button>
+                <button class="mode-btn" data-mode="raw" type="button">
+                    Raw score
+                </button>
+                <span class="control-sep" aria-hidden="true"></span>
+                <label class="control-label" for="act2-band">Crowd</label>
+                <select id="act2-band" class="band-select">
+                    <option value="All" selected>All games</option>
+                    <option value="50-200">50–200 reviews</option>
+                    <option value="200-500">200–500 reviews</option>
+                    <option value="500-2k">500–2,000 reviews</option>
+                    <option value="2k-10k">2,000–10,000 reviews</option>
+                    <option value="10k+">10,000+ reviews</option>
+                </select>
+                <span class="hint" id="chart2-hint" aria-live="polite"></span>
             </div>
         </section>
 
